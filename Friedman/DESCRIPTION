@@ -1,21 +1,21 @@
-Package: Friedman
-Title: Tools for Simple Data Exploration and Visualization
+Package: MoonDataR
+Title: Beginner Tools for Data Exploration and Visualization
 Version: 0.0.0.9000
 Authors@R: 
-    person("Anuli", "Segree", email = "anuli.segree@gmail.com", role = c("aut", "cre"))
-Description: 
-    Friedman is an R package designed to support simple data exploration,
-    cleaning, and visualization workflows for students and beginner analysts.
-    The package will provide functions for summarizing datasets, checking for
-    missing values, and producing clear plots for exploratory data analysis.
+    person("Anuli", "Segree", email = "anuli.segree@gmail.com",
+           role = c("aut", "cre"))
+Description: MoonDataR is a beginner-friendly R package that helps students
+    and new R users explore, clean, summarize, and visualize datasets. The
+    package provides simple functions for checking missing values, cleaning
+    column names, detecting outliers, creating basic plots, and generating a
+    structured S3 data profile object.
 Depends: 
     R (>= 3.1.2)
-Imports: 
-    ggplot2,
-    dplyr
+Imports:
+    ggplot2
 License: CC0
-LazyData: true
 Encoding: UTF-8
+LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 URL: https://github.com/AnuliSegree/Friedman
