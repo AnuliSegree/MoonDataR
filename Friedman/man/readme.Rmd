@@ -1,0 +1,113 @@
+---
+title: "MoonDataR Package Documentation"
+author: "Anuli Segree"
+output: html_document
+---
+
+# MoonDataR Package
+
+## Introduction
+
+The MoonDataR package is a beginner-friendly R package designed to help students and new R users quickly explore and understand datasets.
+
+The goal of this package is to simplify common data exploration tasks such as summarizing variables, checking for missing values, cleaning column names, detecting outliers, and creating basic visualizations.
+
+## Why I Created This Package
+
+During this course, we worked with R functions, data frames, packages, documentation, GitHub, and R Markdown. I wanted my final project to bring those skills together into one practical tool.
+
+MoonDataR is meant for beginner R users who may not yet remember every command needed to inspect a dataset. Instead of writing many separate lines of code, a user can run a few simple functions to understand their data.
+
+## Installation
+
+```r
+devtools::install_github("AnuliSegree/Friedman/Friedman")
+library(MoonDataR)
+```
+
+## Example Dataset
+
+The examples below use the built-in `iris` dataset.
+
+```r
+data <- iris
+```
+
+## Functions
+
+### summarize_data()
+
+```r
+summarize_data(iris)
+```
+
+### missing_report()
+
+```r
+missing_report(airquality)
+```
+
+### clean_names_simple()
+
+```r
+clean_names_simple(iris)
+```
+
+### detect_outliers()
+
+```r
+detect_outliers(iris, "Sepal.Length")
+```
+
+### plot_numeric()
+
+```r
+plot_numeric(iris, "Sepal.Length")
+```
+
+### plot_categorical()
+
+```r
+plot_categorical(iris, "Species")
+```
+
+### make_data_profile()
+
+```r
+profile <- make_data_profile(iris)
+print(profile)
+```
+
+## S3 Class
+
+This package uses an S3 class called `moondata_profile`.
+
+The function `make_data_profile()` creates the object and `print.moondata_profile()` controls how it is displayed.
+
+## Libraries
+
+This package uses `ggplot2` for visualization.
+
+## DESCRIPTION Metadata
+
+The DESCRIPTION file includes the package name, version, author, description, dependencies, license, and GitHub links.
+
+## License
+
+This package uses the CC0 license.
+
+## Challenges
+
+One challenge was learning how all parts of an R package work together, including DESCRIPTION, NAMESPACE, functions, and GitHub.
+
+## Future Improvements
+
+Future versions may include more plots, automated reports, and additional data-cleaning tools.
+
+## Use of AI
+
+I used AI as a learning support tool to help organize ideas, debug code, and improve clarity. I reviewed and tested everything myself.
+
+## GitHub Link
+
+https://github.com/AnuliSegree/Friedman
