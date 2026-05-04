@@ -20,7 +20,7 @@ The package can help users:
 ## Installation
 
 ```r
-devtools::install_github("AnuliSegree/Friedman/Friedman")
+devtools::install_github("AnuliSegree/MoonDataR/MoonDataR")
 library(MoonDataR)
 ```
 
